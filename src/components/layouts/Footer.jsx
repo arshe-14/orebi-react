@@ -24,13 +24,13 @@ const Footer = () => {
               <Link to={"/shop"}>Shop</Link>
             </li>
             <li className="font-normal font-dmFont text-[14px] text-[#6D6D6D] pb-[6px]">
-              <Link to={"about"}>About</Link>
+              <Link to={"/about"}>About</Link>
             </li>
             <li className="font-normal font-dmFont text-[14px] text-[#6D6D6D] pb-[6px]">
               <Link to={"contacts"}>Contact</Link>
             </li>
             <li className="font-normal font-dmFont text-[14px] text-[#6D6D6D] pb-[6px]">
-              <Link>Journal</Link>
+              <Link to={"/journal"}>Journal</Link>
             </li>
           </ul>
 
