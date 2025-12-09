@@ -111,7 +111,7 @@ const Header = () => {
                       <FaUserAlt />
                     </Link>
                   </li>
-                  <li className="ml-[11px]">
+                  <li className="ml-[11px] mt-[-5px]">
                     <Link>
                       <FaSortDown />
                     </Link>
