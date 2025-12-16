@@ -8,7 +8,10 @@ import { FaShoppingCart } from "react-icons/fa";
 
 const Product = ({ productImg, badgeText, productName, productPrice }) => {
   return (
-    <div className="relative group cursor-pointer">
+    <div
+      className="relative group cursor-pointer mx-2
+    "
+    >
       <Image src={productImg} />
       <Badge badgeText={badgeText} className={"absolute top-5 left-5"} />
       <div className="bg-white py-[25px] opacity-0 group-hover:opacity-100 bottom-13 duration-400 left-0 absolute w-full">

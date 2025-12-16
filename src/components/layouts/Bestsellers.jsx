@@ -12,7 +12,7 @@ const Bestsellers = () => {
   return (
     <Container className={" mb-[130px]"}>
       <SubHeading subHeading={"Our Bestsellers"} className={"mb-[48px]"} />
-      <Flex className={"gap-x-6"}>
+      <Flex className={"-mx-2"}>
         <div className="w-1/4">
           <Product
             productImg={bottle}

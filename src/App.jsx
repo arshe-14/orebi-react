@@ -22,3 +22,19 @@ function App() {
 }
 
 export default App;
+
+{
+  /* FilterSidebar CategoryFilter PriceFilter ColorFilter BrandFilter */
+}
+{
+  /* GLOBAL Header Footer Layout Breadcrumb HOME PAGE HomePage HeroBanner
+      FeatureSection ProductPreviewGrid PromoBanner Newsletter SHOP PAGE
+      ShopPage FilterSidebar ShopHeader ProductGrid ProductCard Pagination
+      PRODUCT DETAILS PAGE ProductDetailsPage ProductGallery ProductInfo
+      ProductTabs RelatedProducts ABOUT PAGE AboutPage AboutHero AboutContent
+      MissionSection TeamSection CONTACT PAGE ContactPage ContactInfo
+      ContactForm MapSection CART PAGE CartPage CartItem CartSummary CouponInput
+      CHECKOUT PAGE CheckoutPage BillingForm ShippingForm OrderSummary
+      PaymentMethod AUTH PAGES LoginPage RegisterPage AuthForm REUSABLE UI
+      Button RatingStars ColorSelector QuantitySelector AddToCartButton */
+}

@@ -13,7 +13,7 @@ const SpecialOffers = () => {
     <>
       <Container className={" mb-[140px]"}>
         <SubHeading subHeading={"Special Offers"} className={"mb-[48px]"} />
-        <Flex className={"gap-x-6"}>
+        <Flex className={"-mx-2"}>
           <div className="w-1/4">
             <Product
               productImg={cap}
