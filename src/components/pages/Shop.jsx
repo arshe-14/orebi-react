@@ -13,13 +13,13 @@ const Shop = () => {
     <>
       <Searchbar />
       <Container>
-        <Heading heading={"Products"} className={"mt-[225px] mb-[11px]"} />
+        <Heading heading={"Products"} className={"mt-[40px] mb-[11px]"} />
         <Breadcrumb
           breadcrumbMain={<Link to={"/"}>Home</Link>}
           breadcrumbSign={<FaGreaterThan />}
           breadcrumbSub={"Products"}
         />
-        <div className="flex mt-[130px] justify-between gap-x-[14px]">
+        <div className="flex mt-[50px] justify-between gap-x-[14px]">
           <FilterSidebar />
           <ProductGrid />
         </div>
