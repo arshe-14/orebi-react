@@ -47,26 +47,31 @@ const FilterSidebar = () => {
       </h4>
       <div className="">
         <div className="pb-[20px] mt-[35px] border-b-[1px] border-b-[#F0F0F0] w-full flex items-center">
+          <FaCircle className="text-[16px] text-black" />
           <h4 className="font-dmFont font-normal text-[16px] text-[#767676] ml-[10px]">
             Color 1
           </h4>
         </div>
         <div className="pb-[20px] mt-[20px] border-b-[1px] border-b-[#F0F0F0] w-full flex  items-center">
+          <FaCircle className="text-[16px] text-[#FF8686]" />
           <h4 className="font-dmFont font-normal text-[16px] text-[#767676] ml-[10px]">
             Color 2
           </h4>
         </div>
         <div className="pb-[20px] mt-[20px] border-b-[1px] border-b-[#F0F0F0] w-full flex items-center">
+          <FaCircle className="text-[16px] text-[#7ED321]" />
           <h4 className="font-dmFont font-normal text-[16px] text-[#767676] ml-[10px]">
             Color 3
           </h4>
         </div>
         <div className="pb-[20px] mt-[20px] border-b-[1px] border-b-[#F0F0F0] w-full flex items-center">
+          <FaCircle className="text-[16px] text-[#B6B6B6]" />
           <h4 className="font-dmFont font-normal text-[16px] text-[#767676] ml-[10px]">
             Color 4
           </h4>
         </div>
         <div className="pb-[20px] mt-[20px] border-b-[1px] border-b-[#F0F0F0] w-full flex items-center">
+          <FaCircle className="text-[16px] text-[#15CBA5]" />
           <h4 className="font-dmFont font-normal text-[16px] text-[#767676] ml-[10px]">
             Color 5
           </h4>
@@ -107,7 +112,6 @@ const FilterSidebar = () => {
         <h4 className="font-dmFont font-bold text-[20px] pr-[120px] text-primaryColor mt-[53px]">
           Shop by Price
         </h4>
-
         <div className="pb-[20px] mt-[35px] border-b-[1px] border-b-[#F0F0F0] w-full flex justify-between items-center">
           <h4 className="font-dmFont font-normal text-[16px] text-[#767676]">
             $0.00 - $9.99
