@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Container from "../Container";
 import Flex from "../Flex";
 import Product from "../Product";
@@ -14,6 +14,7 @@ import "slick-carousel/slick/slick.css";
 import Slider from "react-slick";
 import NextArrow from "../NextArrow";
 import PrevArrow from "../PrevArrow";
+import axios from "axios";
 
 const NewArrivals = () => {
   var settings = {
@@ -22,9 +23,41 @@ const NewArrivals = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
   };
+
+  // name of variable is setAllData
+  // empty array is used to add multiple products
+
+  // useEffect is used to reduce side effects of the data of API
+  // useEffect is provided by react
+
+  // This code uses React Hooks to fetch data from
+  //  an API and store it in state: useState([])
+  //  creates a state variable called allData (initially an empty array)
+  //  and a function setAllData to update it; useEffect is used to run side effects
+  //  and here it runs after the component renders, where an async function is defined
+  //  to fetch data from https://dummyjson.com/products using axios.get; await pauses
+  //  execution until the response arrives, and then setAllData updates the state with
+  //  the fetched products (ideally response.data.products); the empty dependency array
+  //  [] is important because it ensures the effect runs only once when the component mounts,
+  //  preventing an infinite loop of repeated API calls caused by re-renders; once the state
+  //  is updated, React re-renders the component and the fetched data becomes available for
+  //  use (such as rendering a list).
+
+  let [allData, setAllData] = useState([]);
+
+  useEffect(() => {
+    async function alldatas() {
+      let data = await axios.get("https://dummyjson.com/products");
+      setAllData(data.data.products);
+    }
+    alldatas();
+  });
+
   return (
     <>
       <Container className={" mb-[118px]"}>
@@ -32,54 +65,16 @@ const NewArrivals = () => {
 
         <div className="-mx-2">
           <Slider {...settings}>
-            <div className="w-1/4">
-              <Product
-                productImg={tableClock}
-                badgeText={"New"}
-                productName={"Table Clock"}
-                productPrice={"$44.00"}
-              />
-            </div>
-            <div className="w-1/4">
-              <Product
-                productImg={watch}
-                badgeText={"New"}
-                productName={"Watch"}
-                productPrice={"$77.00"}
-              />
-            </div>
-            <div className="w-1/4">
-              <Product
-                productImg={basket}
-                badgeText={"New"}
-                productName={"Basket"}
-                productPrice={"$20.70"}
-              />
-            </div>
-            <div className="w-1/4">
-              <Product
-                productImg={stuffedToy}
-                badgeText={"New"}
-                productName={"Stuffed Toy"}
-                productPrice={"$20.00"}
-              />
-            </div>
-            <div className="w-1/4">
-              <Product
-                productImg={wallClock}
-                badgeText={"New"}
-                productName={"Wall Clock"}
-                productPrice={"$12.00"}
-              />
-            </div>
-            <div className="w-1/4">
-              <Product
-                productImg={juteBasket}
-                badgeText={"New"}
-                productName={"Jute Basket"}
-                productPrice={"$38.00"}
-              />
-            </div>
+            {allData.map((item) => (
+              <div className="w-1/4">
+                <Product
+                  productImg={item.thumbnail}
+                  badgeText={item.stock}
+                  productName={item.title}
+                  productPrice={item.price}
+                />
+              </div>
+            ))}
           </Slider>
         </div>
       </Container>

@@ -13,7 +13,7 @@ const Product = ({ productImg, badgeText, productName, productPrice }) => {
     "
     >
       <Image src={productImg} />
-      <Badge badgeText={badgeText} className={"absolute top-5 left-5"} />
+      <Badge badgeText={badgeText} className={"absolute top-2.5 left-2.5"} />
       <div className="bg-white py-[25px] opacity-0 group-hover:opacity-100 bottom-13 duration-400 left-0 absolute w-full">
         <Flex className={"justify-end"}>
           <h3 className="font-dmFont font-normal text-[16px] text-[#767676] hover:font-bold hover:text-primaryColor duration-300 cursor-pointer">
