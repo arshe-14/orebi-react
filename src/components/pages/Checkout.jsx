@@ -149,9 +149,11 @@ const Checkout = () => {
           <h5 className="mt-[42px] mb-[10px] font-bold font-dmFont text-[16px] text-primaryColor">
             Other Notes (optional)
           </h5>
-          <p className="font-normal font-dmFont text-[14px] text-[#767676] pb-[87px] border-b-1 border-[#F0F0F0] w-[73%] mb-[129px]">
-            Notes about your order, e.g. special notes for delivery.
-          </p>
+          <input
+            type="text"
+            className="font-normal text-[14px] text-[#767676] font-dmFont pb-[87px] border-b-1 border-[#F0F0F0] w-[73%] mb-[129px] outline-0 "
+            placeholder="Notes about your order, e.g. special notes for delivery."
+          />
         </div>
         <div className="">
           <SubHeading subHeading={"Your Order"} />
