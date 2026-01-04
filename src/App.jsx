@@ -5,6 +5,13 @@ import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Error from "./components/pages/Error";
 import Shop from "./components/pages/Shop";
+import InsideProduct from "./components/pages/InsideProduct";
+import Contact from "./components/pages/Contact";
+import Login from "./components/pages/Login";
+import SignUp from "./components/pages/SignUp";
+import MyAccount from "./components/pages/MyAccount";
+import Cart from "./components/pages/Cart";
+import Checkout from "./components/pages/Checkout";
 
 function App() {
   return (
@@ -14,6 +21,13 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="shop" element={<Shop />} />
+          <Route path="InsideProduct" element={<InsideProduct />} />
+          <Route path="Contact" element={<Contact />} />
+          <Route path="Login" element={<Login />} />
+          <Route path="SignUp" element={<SignUp />} />
+          <Route path="MyAccount" element={<MyAccount />} />
+          <Route path="Cart" element={<Cart />} />
+          <Route path="Checkout" element={<Checkout />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>

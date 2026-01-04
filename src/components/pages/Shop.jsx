@@ -11,7 +11,6 @@ import ProductGrid from "../layouts/ProductGrid";
 const Shop = () => {
   return (
     <>
-      <Searchbar />
       <Container>
         <Heading heading={"Products"} className={"mt-[40px] mb-[11px]"} />
         <Breadcrumb

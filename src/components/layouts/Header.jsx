@@ -4,6 +4,7 @@ import Image from "../Image";
 import logo from "/src/assets/logo.png";
 import Container from "../Container";
 import { Link } from "react-router-dom";
+import Searchbar from "./Searchbar";
 
 const Header = () => {
   return (
@@ -41,7 +42,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  to={"/contacts"}
+                  to={"/Contact"}
                   className="font-dmFont font-normal text-[14px] text-[#767676] hover:text-primaryColor duration-300 hover:font-bold"
                 >
                   Contacts
@@ -59,6 +60,7 @@ const Header = () => {
           </div>
         </Flex>
       </Container>
+      <Searchbar />
     </div>
   );
 };

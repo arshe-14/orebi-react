@@ -11,7 +11,6 @@ import SpecialOffers from "../layouts/SpecialOffers";
 const Home = () => {
   return (
     <>
-      <Searchbar />
       <Banner />
       <Information />
       <AdOne />
