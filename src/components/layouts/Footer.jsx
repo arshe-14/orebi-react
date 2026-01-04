@@ -27,7 +27,7 @@ const Footer = () => {
               <Link to={"/about"}>About</Link>
             </li>
             <li className="font-normal font-dmFont text-[14px] text-[#6D6D6D] pb-[6px]">
-              <Link to={"contacts"}>Contact</Link>
+              <Link to={"/Contact"}>Contact</Link>
             </li>
             <li className="font-normal font-dmFont text-[14px] text-[#6D6D6D] pb-[6px]">
               <Link to={"/journal"}>Journal</Link>
