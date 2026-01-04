@@ -20,22 +20,22 @@ const MyAccount = () => {
           <div className="mt-[127px]">
             <div className="flex">
               <div className="">
-                <h4 className="pb-[19px] pr-[149px] hover:font-bold font-dmFont text-[16px] text-[#767676] font-normal duration-300 cursor-pointer border-b-1 border-[#F0F0F0] hover:text-primaryColor border-">
+                <h4 className="pb-[19px] pr-[149px] font-dmFont text-[16px] text-[#767676] font-normal duration-300 cursor-pointer border-b-1 border-[#F0F0F0] hover:text-primaryColor border-">
                   Dashboard
                 </h4>
-                <h4 className="mt-[20px] pb-[19px] pr-[183px] hover:font-bold font-dmFont text-[16px] text-[#767676] font-normal duration-300 cursor-pointer border-b-1 border-[#F0F0F0] hover:text-primaryColor border-">
+                <h4 className="mt-[20px] pb-[19px] pr-[183px] font-dmFont text-[16px] text-[#767676] font-normal duration-300 cursor-pointer border-b-1 border-[#F0F0F0] hover:text-primaryColor border-">
                   Others
                 </h4>
-                <h4 className="mt-[20px] pb-[19px] pr-[152px] hover:font-bold font-dmFont text-[16px] text-[#767676] font-normal duration-300 cursor-pointer border-b-1 border-[#F0F0F0] hover:text-primaryColor border-">
+                <h4 className="mt-[20px] pb-[19px] pr-[152px] font-dmFont text-[16px] text-[#767676] font-normal duration-300 cursor-pointer border-b-1 border-[#F0F0F0] hover:text-primaryColor border-">
                   Donwloads
                 </h4>
-                <h4 className="mt-[20px] pb-[19px] pr-[155px] hover:font-bold font-dmFont text-[16px] text-[#767676] font-normal duration-300 cursor-pointer border-b-1 border-[#F0F0F0] hover:text-primaryColor border-">
+                <h4 className="mt-[20px] pb-[19px] pr-[155px] font-dmFont text-[16px] text-[#767676] font-normal duration-300 cursor-pointer border-b-1 border-[#F0F0F0] hover:text-primaryColor border-">
                   Addresses
                 </h4>
-                <h4 className="mt-[20px] pb-[19px] pr-[118px] hover:font-bold font-dmFont text-[16px] text-[#767676] font-normal duration-300 cursor-pointer border-b-1 border-[#F0F0F0] hover:text-primaryColor border-">
+                <h4 className="mt-[20px] pb-[19px] pr-[118px] font-dmFont text-[16px] text-[#767676] font-normal duration-300 cursor-pointer border-b-1 border-[#F0F0F0] hover:text-primaryColor border-">
                   Account details
                 </h4>
-                <h4 className="mt-[20px] pb-[19px] pr-[183px] hover:font-bold font-dmFont text-[16px] text-[#767676] font-normal duration-300 cursor-pointer border-b-1 border-[#F0F0F0] hover:text-primaryColor border-">
+                <h4 className="mt-[20px] pb-[19px] pr-[183px] font-dmFont text-[16px] text-[#767676] font-normal duration-300 cursor-pointer border-b-1 border-[#F0F0F0] hover:text-primaryColor border-">
                   Logout
                 </h4>
               </div>
