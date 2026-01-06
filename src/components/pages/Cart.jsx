@@ -9,6 +9,7 @@ import { ImCross } from "react-icons/im";
 import Image from "../Image";
 import smSunglass from "/src/assets/smSunglass.png";
 import { TiArrowSortedDown } from "react-icons/ti";
+import Counter from "../layouts/Counter";
 
 const Cart = () => {
   return (
@@ -54,12 +55,10 @@ const Cart = () => {
               <h4 className="font-bold text-[16px] text-primaryColor font-dmFont w-1/4">
                 <Flex
                   className={
-                    "cursor-pointer px-[21px] w-[140px] py-[5px] border-1 border-[#F0F0F0] text-[16px] text-[#767676] font-dmFont font-normal gap-x-[38px]"
+                    "border-1 border-[#F0F0F0] text-[16px] text-[#767676] font-dmFont font-normal w-[140px]"
                   }
                 >
-                  <h6>-</h6>
-                  <h6>1</h6>
-                  <h6>+</h6>
+                  <Counter />
                 </Flex>
               </h4>
               <h4 className="font-bold text-[20px] text-primaryColor font-dmFont w-1/4">

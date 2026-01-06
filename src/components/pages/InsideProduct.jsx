@@ -14,6 +14,7 @@ import { FaStar } from "react-icons/fa";
 import { FaCircle } from "react-icons/fa6";
 import { FaCaretDown } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa6";
+import Counter from "../layouts/Counter";
 
 const InsideProduct = () => {
   return (
@@ -99,12 +100,10 @@ const InsideProduct = () => {
             </h6>
             <Flex
               className={
-                "px-[21px] w-[140px] py-[5px] border-1 border-[#F0F0F0] text-[16px] text-[#767676] font-dmFont font-normal gap-x-[38px] ml-[76px]"
+                "border-1 border-[#F0F0F0] text-[16px] text-[#767676] font-dmFont font-normal ml-[76px]"
               }
             >
-              <h6>-</h6>
-              <h6>1</h6>
-              <h6>+</h6>
+              <Counter />
             </Flex>
           </Flex>
           <Flex
